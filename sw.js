@@ -21,7 +21,7 @@ self.addEventListener('active', function () {
 });
 
 var precacheUrls = [
-'/','/posts/34275/','/posts/6165/','/posts/53406/','/posts/52867/','/posts/16107/','/posts/4759/','/posts/3164/','/posts/6004/','/posts/2915/','/posts/46208/','/posts/49651/','/posts/8716/','/posts/4785/','/posts/64366/','/posts/26104/','/posts/2141/','/posts/51385/','/posts/12019/','/posts/218/','/posts/64322/','/posts/9628/','/gallery/index.html','/letter/index.html','/about/index.html','/icons/index.html','/library/index.html','/records/content.json','/records/index.html','/resume/index.html',
+'/','/posts/34275/','/posts/6165/','/posts/53406/','/posts/52867/','/posts/16107/','/posts/4759/','/posts/3164/','/posts/6004/','/posts/2915/','/posts/46208/','/posts/49651/','/posts/8716/','/posts/4785/','/posts/64366/','/posts/26104/','/posts/2141/','/posts/51385/','/posts/12019/','/posts/218/','/posts/64322/','/posts/9628/','/gallery/index.html','/about/index.html','/icons/index.html','/letter/index.html','/library/index.html','/records/content.json','/records/index.html','/resume/index.html',
 ];
 toolbox.precache(precacheUrls);
 toolbox.options = {"networkTimeoutSeconds":5};
