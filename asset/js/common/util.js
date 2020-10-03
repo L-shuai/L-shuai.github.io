@@ -6,10 +6,13 @@ _run_md5();
 const mobileRegex = /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i;
 
 const getChromeVersion = o => {
+	return 79;
   if (/Chrome/i.test(window.navigator.userAgent)) {
     let matches = window.navigator.userAgent.match(/Chrome\/([0-9.]+)/i);
-	return parseInt(matches[1]);
     if (matches.length > 1) {
+		//alert(matches);
+		//alert(matches[1]);
+		//alert(parseInt(matches[1]));
       return parseInt(matches[1]);
     }
   } else {
