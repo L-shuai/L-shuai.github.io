@@ -1,1 +1,1 @@
-window.location.replace("/browser.html");
+//window.location.replace("/browser.html");

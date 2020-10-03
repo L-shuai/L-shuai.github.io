@@ -127,26 +127,35 @@ const launch = {
       let hidden;
       if (typeof document.hidden !== 'undefined') { // Opera 12.10 and Firefox 18 and later support 
         hidden = 'hidden';
+		alert(1)
       } else if (typeof document.msHidden !== 'undefined') {
         hidden = 'msHidden';
+		alert(2)
       } else if (typeof document.webkitHidden !== 'undefined') {
         hidden = 'webkitHidden';
+		alert(3)
       } else {
-        hidden = 'nohiddren';
+        //hidden = 'nohiddren';
+		hidden = 'hidden';
+		alert(4)
       }
       if (!document[hidden]) {
         root.querySelector('.m-launch').classList.add('disabled');
+		alert(5)
       } else {
-        that._close = window.setInterval(e => {
-          if (!document[hidden]) {
-            root.querySelector('.m-launch').classList.add('disabled');
-            window.clearInterval(that._close);
-            that._close = null;
-          }
-        }, lock_wait);
+		  alert(6)
+		   root.querySelector('.m-launch').classList.add('disabled');
+        // that._close = window.setInterval(e => {
+          // if (!document[hidden]) {
+            // root.querySelector('.m-launch').classList.add('disabled');
+            // window.clearInterval(that._close);
+            // that._close = null;
+          // }
+        // }, lock_wait);
       }
     } else {
-      root.querySelector('.m-launch').classList.remove('disabled');
+		alert(7)
+      //root.querySelector('.m-launch').classList.remove('disabled');
     }
   }
 };
