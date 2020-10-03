@@ -8,6 +8,7 @@ const mobileRegex = /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBer
 const getChromeVersion = o => {
   if (/Chrome/i.test(window.navigator.userAgent)) {
     let matches = window.navigator.userAgent.match(/Chrome\/([0-9.]+)/i);
+	return parseInt(matches[1]);
     if (matches.length > 1) {
       return parseInt(matches[1]);
     }
